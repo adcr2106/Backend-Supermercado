@@ -66,7 +66,6 @@ class PagoResponse(BaseModel):
     monto: float
     id_caja: UUID
     id_compra: UUID
-    fecha: datetime
     activo: bool
 
     class Config:
