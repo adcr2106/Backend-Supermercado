@@ -38,18 +38,16 @@ app.add_middleware(
 )
 
 # === REGISTRAR TODOS LOS ROUTERS AQUÍ ===
-app.include_router(categoria_router, prefix="/categorias", tags=["categorias"])
-app.include_router(producto_router, prefix="/productos", tags=["productos"])
-app.include_router(cliente_router, prefix="/clientes", tags=["clientes"])
-app.include_router(proveedor_router, prefix="/proveedores", tags=["proveedores"])
-app.include_router(empleado_router, prefix="/empleados", tags=["empleados"])
-app.include_router(caja_registradora_router, prefix="/cajas", tags=["cajas"])
-app.include_router(compra_router, prefix="/compras", tags=["compras"])
-app.include_router(
-    detalle_compra_router, prefix="/detalles_compra", tags=["detalles_compra"]
-)
-app.include_router(jornada_router, prefix="/jornadas", tags=["jornadas"])
-app.include_router(pago_router, prefix="/pagos", tags=["pagos"])
+app.include_router(categoria_router)
+app.include_router(producto_router)
+app.include_router(cliente_router)
+app.include_router(proveedor_router)
+app.include_router(empleado_router)
+app.include_router(caja_registradora_router)
+app.include_router(compra_router)
+app.include_router(detalle_compra_router)
+app.include_router(jornada_router)
+app.include_router(pago_router)
 # === FIN DEL REGISTRO DE ROUTERS ===
 
 

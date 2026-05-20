@@ -8,7 +8,7 @@ from datetime import datetime
 
 # Esquema para crear compra
 class CompraCreate(BaseModel):
-    total: float = Field(..., gt=0)
+    total: float = Field(0, ge=0)
     doc_cliente: str = Field(..., min_length=1, max_length=50)
     doc_empleado: str = Field(..., min_length=1, max_length=50)
 
@@ -27,7 +27,7 @@ class CompraCreate(BaseModel):
 
 # Esquema para actualizar compra
 class CompraUpdate(BaseModel):
-    total: Optional[float] = Field(None, gt=0)
+    total: Optional[float] = Field(None, ge=0)
     doc_cliente: Optional[str] = Field(None, max_length=50)
     doc_empleado: Optional[str] = Field(None, max_length=50)
 
@@ -54,7 +54,7 @@ class CompraResponse(BaseModel):
     total: float
     doc_cliente: str
     doc_empleado: str
-    fecha: datetime
+    fecha_hora: datetime
     activo: bool
 
     class Config:

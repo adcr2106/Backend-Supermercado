@@ -19,7 +19,7 @@ from schemas.detalle_compra import (
 )
 from sqlalchemy.orm import Session
 
-router = APIRouter(prefix="/detalle-compras", tags=["detalle_compras"])
+router = APIRouter(prefix="/detalles-compra", tags=["detalles_compra"])
 
 
 @router.get("/", response_model=List[DetalleCompraResponse])

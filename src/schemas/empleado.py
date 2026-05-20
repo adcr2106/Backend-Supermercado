@@ -117,8 +117,10 @@ class EmpleadoResponse(BaseModel):
     correo: Optional[str]
     creado_por: Optional[str]
     actualizado_por: Optional[str]
-    fecha_creacion: datetime
-    fecha_actualizacion: Optional[datetime]
+
+    creado_en: datetime
+    actualizado_en: Optional[datetime]
+
     activo: bool
 
     class Config:
