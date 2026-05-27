@@ -31,6 +31,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:4200",
         "http://127.0.0.1:4200",
+        "https://supermercado-7faf4.web.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
